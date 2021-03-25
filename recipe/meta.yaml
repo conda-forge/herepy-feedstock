@@ -21,7 +21,7 @@ requirements:
   run:
     - python >=3.5
     - requests ==2.25
-    - polling >=0.3
+    - polling ==0.3
 
 test:
   imports:
