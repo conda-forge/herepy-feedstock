@@ -1,5 +1,5 @@
 {% set name = "herepy" %}
-{% set version = "3.5.2" %}
+{% set version = "3.5.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/abdullahselek/HerePy/archive/{{ version }}.tar.gz
-  sha256: b9cd3a19a3a77bb2bdbe837756dbef90a024e6235f9675c57c979fc63a2ba21b
+  sha256: 9f7473afa3bc5e6015efdbf2cf84a870e938d883f6f0f9400b216a3cc9543153
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -31,7 +31,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'A library that provides a Python interface to the HERE APIs'
+  summary: A library that provides a Python interface to the HERE APIs
   description: |
     A library that provides a Python interface to the HERE APIs
   doc_url: https://herepy.abdullahselek.com/
