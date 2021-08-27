@@ -1,5 +1,5 @@
 {% set name = "herepy" %}
-{% set version = "3.5.3" %}
+{% set version = "3.5.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/abdullahselek/HerePy/archive/{{ version }}.tar.gz
-  sha256: 9f7473afa3bc5e6015efdbf2cf84a870e938d883f6f0f9400b216a3cc9543153
+  sha256: f789ff947cb6a3b4222e38091d2cc4be8dbb3aec7a2f3d74b5ea28d917cf8e59
 
 build:
   noarch: python
