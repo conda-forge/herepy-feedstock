@@ -1,5 +1,5 @@
 {% set name = "herepy" %}
-{% set version = "3.6.0" %}
+{% set version = "3.6.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 800b3cb28bc83c82187d82f02c56f8a80c10e6f32bf09eb591c5694afbadddf3
+  sha256: 0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5
 build:
   noarch: python
   number: 0
@@ -15,10 +15,10 @@ build:
 
 requirements:
   host:
-    - python >=3.5
+    - python >=3.8
     - pip
   run:
-    - python >=3.5
+    - python >=3.8
     - requests ==2.25
 
 test:
