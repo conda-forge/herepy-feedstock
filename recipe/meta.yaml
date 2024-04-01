@@ -17,6 +17,7 @@ requirements:
   host:
     - python >=3.8
     - pip
+    - six
   run:
     - python >=3.8
     - requests ==2.25
