@@ -7,13 +7,13 @@ Home: https://github.com/abdullahselek/HerePy
 
 Package license: MIT
 
-Summary: A library that provides a Python interface to the HERE APIs
+Summary: A Python interface to HERE location APIs with support for synchronous and asynchronous HTTP calls.
 
 Development: https://github.com/abdullahselek/HerePy
 
-Documentation: https://herepy.abdullahselek.com/
+Documentation: https://abdullahselek.github.io/HerePy/
 
-A library that provides a Python interface to the HERE APIs
+A Python interface to HERE location APIs with support for synchronous and asynchronous HTTP calls.
 
 
 Current build status
