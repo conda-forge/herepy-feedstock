@@ -17,6 +17,7 @@ requirements:
   host:
     - python >=3.10
     - pip
+    - hatchling
   run:
     - python >=3.10
     - httpx2 >=2.14.0
