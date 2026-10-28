@@ -1,5 +1,6 @@
 {% set name = "herepy" %}
-{% set version = "3.6.4" %}
+{% set version = "3.7.0" %}
+{% set python_min = "3.11" %}
 
 package:
   name: {{ name|lower }}
@@ -7,19 +8,21 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: fa6c0a1c2a95db6ddd1b201f1f425bb27973cc61ea39b09634ba0022b4846242
+  sha256: 23b21e9b351ee5c35c77917b823d4f2cb6fd4a5b67ae24cc29b4ab86f42f140c
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - python {{ python_min }}
     - pip
+    - hatchling
   run:
     - python >={{ python_min }}
-    - requests ==2.25
+    - httpx2 >=2.14.0
+    - requests >=2.25.1,<3
 
 test:
   requires:
@@ -34,8 +37,8 @@ about:
   license_file: LICENSE
   summary: A library that provides a Python interface to the HERE APIs
   description: |
-    A library that provides a Python interface to the HERE APIs
-  doc_url: https://herepy.abdullahselek.com/
+    A Python interface to HERE location APIs with support for synchronous and asynchronous HTTP calls.
+  doc_url: https://abdullahselek.github.io/HerePy/
   dev_url: https://github.com/abdullahselek/HerePy
 
 extra:
